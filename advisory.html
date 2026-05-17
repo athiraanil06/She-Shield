@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Women Travel Comfort Index</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+
+            /* Background Image */
+            background: url("hero.png") no-repeat center center fixed;
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Burnt Orange Container */
+        .container {
+            width: 420px;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(94, 42, 7, 0.85); /* Burnt orange */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            color: #d3e1eb; /* Blue text */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #97b9d1;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+            color: #b8ccda;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 2px solid #d4af37;
+            background: rgba(255, 255, 255, 0.8);
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #b7950b;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #d4af37;
+            border: none;
+            color: #022843;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #b7950b;
+        }
+
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: #92c1e3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Women Travel Comfort Index & Advisory System</h1>
+
+    <form>
+        <label>Enter Place</label>
+        <input type="text" placeholder="Enter city or location">
+
+        <label>Select Date</label>
+        <input type="date">
+
+        <label>Select Time</label>
+        <input type="time">
+
+        <button type="button">Calculate Safety Probability</button>
+    </form>
+
+    <div class="result">
+        Safety Probability: -- %
+    </div>
+</div>
+
+</body>
+</html>
